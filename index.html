@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOSPITAL MANAGMENT SYSTEM</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <span>HOSPITAL NAME</span>
+        <img class="icon" src="IMAGES/menuIcon-01.png">
+        </div>
+    </header>
+    <div class="parent">
+        <ul class="ul">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PATIENTS</a></li>
+            <li><a href="#">APOINTMENTS</a></li>
+        </ul>
+    </div>
+    <div class="search">
+        <h2 class="searchInput">SEARCH</h2>
+        <input type="text" placeholder="NAME">
+        <input type="text" placeholder="SURAME">
+        <input type="text" placeholder="DNI">
+        <input type="text" placeholder="PHONE NUMBER">
+        <button>SEARCH</button>
+    </div>
+</body>
+<script>
+document.querySelector(".icon").addEventListener("click",function(e,i){
+    document.querySelector(".parent").classList.toggle("setDisplay");
+})
+</script>
+</html>
